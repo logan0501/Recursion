@@ -30,9 +30,13 @@ typedef vector<ii> vii;
 typedef vector<ll> vll;
 typedef vector<vll> vvll;
 
-
+void fun(int n){
+	if (n==0) return;
+	cout<<n<<endl;
+	fun(n-1);
+}
 int main() {
     fast;
-    cout<<"hello";
+   fun(10);
     return 0;
 }

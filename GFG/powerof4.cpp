@@ -30,13 +30,16 @@ typedef vector<ii> vii;
 typedef vector<ll> vll;
 typedef vector<vll> vvll;
 
-int sumofNNumbers(int n){
-	if (n==0) return 0;
-	return n+sumofNumbers(n-1);
+bool ispowerof4(int n){
+	if(n==0) return false;
+	if(n==1) return true;
+	if(n%4!=0) return false;
+	return ispowerof4(n/4);
 }
 
 int main() {
     fast;
-    cout<<sumofNNumbers(3);
+
+    cout<<"hello";
     return 0;
 }
